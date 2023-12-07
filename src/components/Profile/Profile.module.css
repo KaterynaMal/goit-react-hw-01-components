@@ -1,72 +1,67 @@
 body {
-background-color: #F5F9FB;
+  background-color: #f5f9fb;
 }
 
 .profile {
-    /* background-color: #F5F9FB; */
-    width: 400px;
-    margin-left: auto;
-        margin-right: auto;
-        border: 1px solid #F4F2F2;
-        margin-top: 35px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #f4f2f2;
+  margin-top: 35px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .description {
-/* width: 400px; */
-background-color: #ffff;
-    /* margin-left: auto;
-    margin-right: auto; */
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+  background-color: #ffff;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }
 
 .avatar {
-    width: 250px;
-    height: 100%;
-    border-radius: 50%;
-    margin-bottom: 15px;
+  width: 250px;
+  height: 100%;
+  border-radius: 50%;
+  margin-bottom: 15px;
 }
 
 .name {
-    font-size: 24px;
-    font-weight: 700;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .tag,
 .location {
-    font-size: 18px;
-    font-weight: 500;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .stats {
-    display: flex;
-    /* width: 400px; */
-    background-color: #DEFAFB;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 22px 35px;
-        justify-content: space-between;
-        
+  display: flex;
+  background-color: #defafb;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 22px 35px;
+  justify-content: space-between;
 }
 
 .item {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 10px;
 }
 
 .label {
-    font-size: 18px;
-    font-weight: 500;
-    color: #BAB9B9;
+  font-size: 18px;
+  font-weight: 500;
+  color: #7d7e7e;
 }
 
 .quantity {
-    font-size: 20px;
-        font-weight: 600;
-        color: #040404;
+  font-size: 20px;
+  font-weight: 600;
+  color: #040404;
 }

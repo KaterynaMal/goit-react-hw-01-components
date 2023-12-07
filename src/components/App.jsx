@@ -21,7 +21,6 @@ export const App = () => {
       />
       <div>
         <Statistics title="Upload stats" stats={data} />
-        {/* <Statistics stats={data} /> */}
       </div>
       <div>
         <FriendList friends={friends} />

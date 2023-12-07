@@ -1,52 +1,39 @@
 .friend_list {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    width: 400px;
-    padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  width: 400px;
+  padding-top: 20px;
 }
 
 .item {
-    /* padding: 10px 20px; */
-width: 100%;
-border-radius: 10px;
-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;;
-background-color: #ffff;
-display: flex;
-align-items: center;
-gap: 22px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: #ffff;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .avatar {
-    /* width: 90px; */
-    border-radius: 30%;
-    margin-top: 15px;
-    margin-bottom: 15px;
+  border-radius: 30%;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .name {
-    font-size: 24px;
-    font-weight: 500;
+  font-size: 24px;
+  font-weight: 500;
 }
 
 .status {
-    width: 10px;
-        /* або інша ширина, яку ви бажаєте */
-        height: 10px;
-        /* або інша висота, яку ви бажаєте */
-        display: inline-block;
-        /* для того, щоб ширина і висота працювали */
-        border-radius: 50%;
-}
-
-.online {
-    background-color: green;
-}
-
-.offline {
-    background-color: red;
-    
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border-radius: 50%;
+  margin-left: 20px;
 }

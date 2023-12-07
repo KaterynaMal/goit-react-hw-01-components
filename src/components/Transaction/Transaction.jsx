@@ -1,23 +1,29 @@
 import React from 'react';
-// import css from './Transaction.module.css'
+import css from './Transaction.module.css';
 
 const TransactionHistory = ({ items }) => {
   return (
-    <table className="transaction-history">
-      <thead>
-        <tr>
-          <th>Type</th>
-          <th>Amount</th>
-          <th>Currency</th>
+    <table className={css.transaction_history}>
+      <thead className={css.thead}>
+        <tr className={css.tr}>
+          <th className={css.th}>Type</th>
+          <th className={css.th}>Amount</th>
+          <th className={css.th}>Currency</th>
         </tr>
       </thead>
 
-      <tbody>
-        {items.map(({ id, type, amount, currency }) => (
-          <tr key={id}>
-            <td>{type}</td>
-            <td>{amount}</td>
-            <td>{currency}</td>
+      <tbody className={css.tbody}>
+        {items.map(({ id, type, amount, currency }, index) => (
+          <tr
+            className={css.tr}
+            key={id}
+            style={{
+              backgroundColor: index % 2 === 0 ? '#E8F6F6' : '#fff',
+            }}
+          >
+            <td className={css.td}>{type}</td>
+            <td className={css.td}>{amount}</td>
+            <td className={css.td}>{currency}</td>
           </tr>
         ))}
       </tbody>
