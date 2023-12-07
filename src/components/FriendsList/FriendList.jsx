@@ -4,7 +4,7 @@ import css from './FriendList.module.css'
 const FriendList = ({ friends }) => {
   return (
     <div>
-      <ul className="friend-list">
+      <ul className={css.friend_list}>
         {friends.map(friend => (
           <FriendListItem key={friend.id} friend={friend} />
         ))}
@@ -18,10 +18,10 @@ export default FriendList;
 const FriendListItem = ({ friend }) => {
   const { avatar, name, isOnline, id } = friend;
   return (
-    <li className="item" key={id}>
-      <span className={`status ${isOnline ? 'online' : 'offline'}`}></span>
-      <img className="avatar" src={avatar} alt="User avatar" width="48" />
-      <p className="name">{name}</p>
+    <li className={css.item} key={id}>
+      <span className={`status ${isOnline ? css.online : css.offline}`}></span>
+      <img className={css.avatar} src={avatar} alt="User avatar" width="48" />
+      <p className={css.name}>{name}</p>
     </li>
   );
 };
